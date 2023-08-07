@@ -8,7 +8,7 @@ const Card = () => {
   {/* <img className='h-40' src = "#" alt ="image"/> */}
   <h1>Name: lorem ipsum</h1>
   <h1>Rating: 5</h1>
-  <h1>Year:2005</h1>
+  <h1>Year: 2005</h1>
 </div>
 
     </div>
