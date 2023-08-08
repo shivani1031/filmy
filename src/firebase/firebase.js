@@ -1,6 +1,7 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import {getFirestore, collection} from 'firebase/firestore'
+import {getFirestore, collection} from 'firebase/firestore';
+
 const firebaseConfig = {
   apiKey: "AIzaSyAXARxiaas8tG9aI5Vvvh_DvOZVf0ldNoU",
   authDomain: "filmy-2dce8.firebaseapp.com",
@@ -16,4 +17,4 @@ const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
 export const moviesRef = collection(db, "movies");
 
-export default App
+export default app
