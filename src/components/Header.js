@@ -4,7 +4,7 @@ import {Button} from '@mui/material';
 import {Link} from 'react-router-dom';
 const Header = () => {
   return (
-    <div className='text-3xl flex justify-between text-red-500 p-3 font-bold border-b-2 border-gray-300'>
+    <div className='sticky top-0 header z-10 text-3xl flex justify-between text-red-500 p-3 font-bold border-b-2 border-gray-300'>
 
     <span>Filmy
    <span className='text-white'>Verse</span></span>
