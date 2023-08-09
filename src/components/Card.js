@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import ReactStars from 'react-stars';
-
+import {ThreeDots} from "react-loader-spinner";
 const Card = () => {
-  conat [data, setdata] = useState([]);
-
+  const [data, setdata] = useState([]);
+const [loading, setloading] = useState(true);
   useEffect(() =>{
     async function getData()
     {
@@ -14,7 +14,8 @@ const Card = () => {
   
   return (
     <div className='flex flex-wrap justify-between p-3 mt-2'>
-{data.map((e, i)=>{
+      {loading ? <div className='w-full flex justify-center items-center h-96'> <ThreeDots height ={40} color="white"/></div> :
+data.map((e, i)=>{
   return(
     <div key = {i} className='card font-medium shadow-lg p-2 hover:-translate-y-3 cursor-pointer'>
 <img className='h-72' src = {e.image} />
@@ -30,8 +31,8 @@ const Card = () => {
 </h1>
       </div>
   )
-})}
-
+})
+}
     </div>
   )
 }
